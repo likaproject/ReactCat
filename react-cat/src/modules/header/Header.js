@@ -1,8 +1,13 @@
 import React from "react";
+import "./Header.css";
 
 class Header extends React.Component {
     render() {
-        return <h3>Header</h3>;
+        return(
+            <header>
+                <h3>Header</h3>
+            </header>
+        );
     }
 }
 

@@ -1,0 +1,7 @@
+header {
+    width: 80vw;
+    height: 20vh;
+    min-height: 80px;
+    flex-direction: row;
+    background-color: blanchedalmond;
+}
