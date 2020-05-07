@@ -1,16 +1,15 @@
 import React from "react";
 import "./Main.css";
-
-import ReposList from "../repos-list/ReposList";
+import MainContent from "../main-content/MainContent";
 import Header from "../header/Header";
 
 class Main extends React.Component {
     render() {
         return (
-            <div className="mainContent">
-                <Header/>
-                <ReposList/>
-            </div>
+                <div className="mainContent">
+                    <Header/>
+                    <MainContent/>
+                </div>
         );
     }
 }

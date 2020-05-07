@@ -1,12 +1,9 @@
 import React from "react";
+import "./ReposList.css";
 
 class ReposList extends React.Component {
     render() {
-        return (
-            <main>
-                <h3>ReposList</h3>
-            </main>
-        );
+        return <h1>Repos List</h1>;
     }
 }
 

@@ -5,7 +5,7 @@ class UserInfo extends React.Component {
     render() {
         return (
             <div className="userInfo">
-                <h3>UserInfo</h3>
+                <h1> {this.props.name} {this.props.lastName}</h1>
             </div>
         );
     }
