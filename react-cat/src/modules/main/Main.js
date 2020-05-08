@@ -6,10 +6,10 @@ import Header from "../header/Header";
 class Main extends React.Component {
     render() {
         return (
-                <div className="mainContent">
-                    <Header/>
-                    <MainContent/>
-                </div>
+            <div className="mainContent">
+                <Header/>
+                <MainContent/>
+            </div>
         );
     }
 }
