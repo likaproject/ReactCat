@@ -5,15 +5,42 @@ import SideMenu from "./modules/side-menu/SideMenu";
 import Main from "./modules/main/Main";
 
 
-function App() {
-    return(
-        <Router>
-            <div className="App">
-                <SideMenu/>
-                <Main/>
-            </div>
-        </Router>
-    );
+class App extends React.Component {
+    constructor(props) {
+        super(props);
+        this.state = {
+			user: {},
+			isLoaded: false
+		};
+    }
+
+	getUser(userId) {
+		fetch(`https://api.github.com/users`)
+			.then(response => response.json())
+			.then(result => result.find(user => user.id === userId))
+			.then(user => this.setState({
+				user: user,
+				isLoaded: true
+			}))
+			.catch(reason => console.log('Error: ' + reason));
+	}
+
+    componentDidMount() {
+		this.getUser(5);
+	}
+
+	render() {
+    	const {user, isLoaded} = this.state;
+
+		return(
+            <Router>
+			    <div className="App">
+			        <SideMenu user={this.state.user}/>
+			        <Main />
+			    </div>
+			</Router>
+        );
+    }
 }
 
 export default App;

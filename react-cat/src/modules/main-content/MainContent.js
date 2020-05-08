@@ -4,12 +4,7 @@ import FollowersList from "../followers-list/FollowersList";
 import Subscriptions from "../subscriptions/Subscriptions";
 import ReposList from "../repos-list/ReposList";
 
-import {
-    BrowserRouter as Router,
-    Switch,
-    Route,
-    Link
-} from "react-router-dom";
+import {Switch, Route} from "react-router-dom";
 
 class MainContent extends React.Component {
 

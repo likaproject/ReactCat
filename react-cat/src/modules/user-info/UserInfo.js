@@ -1,11 +1,13 @@
 import React from "react";
 import "./UserInfo.css";
+import { scryRenderedComponentsWithType } from "react-dom/test-utils";
 
 class UserInfo extends React.Component {
     render() {
         return (
             <div className="userInfo">
-                <h1> {this.props.name} {this.props.lastName}</h1>
+                <img src={this.props.avatar} />
+                <h1>{this.props.login}</h1>
             </div>
         );
     }
