@@ -16,13 +16,13 @@ class SideMenu extends React.Component {
                         <Link to="/repositories">Repositories</Link>
                     </li>
                     <li className="navTab">
-                        <Link to="/subscriptions">Index</Link>
+                        <Link to="/subscriptions">Subscriptions</Link>
                     </li>
                     <li className="navTab">
                         <Link to="/followers">Followers</Link>
                     </li>
                     <li className="navTab">
-                        <Link to="/about">Index</Link>
+                        <Link to="/about">About</Link>
                     </li>
                 </ul>
             </div>
