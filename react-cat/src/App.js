@@ -1,8 +1,8 @@
 import React from "react";
 import {BrowserRouter as Router, Route} from "react-router-dom";
 import "./App.css";
-import SideMenu from "./modules/side-menu/SideMenu";
-import Main from "./modules/main/Main";
+import SideMenu from "./components/SideMenu/index";
+import Main from "./components/Main/index";
 
 
 class App extends React.Component {
@@ -26,6 +26,7 @@ class App extends React.Component {
 	}
 
     componentDidMount() {
+    	// TODO: retrieve id from url.
 		this.getUser(5);
 	}
 

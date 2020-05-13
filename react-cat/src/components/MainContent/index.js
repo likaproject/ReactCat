@@ -1,13 +1,12 @@
 import React from "react";
-import About from "../about/About";
-import FollowersList from "../followers-list/FollowersList";
-import Subscriptions from "../subscriptions/Subscriptions";
-import ReposList from "../repos-list/ReposList";
+import About from "../About/index";
+import FollowersList from "../FollowersList/index";
+import Subscriptions from "../Subscriptions/index";
+import ReposList from "../ReposList/index";
 
 import {Switch, Route} from "react-router-dom";
 
 class MainContent extends React.Component {
-
     render() {
         return (
             <main>

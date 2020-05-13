@@ -1,7 +1,7 @@
 import React from "react";
 
 function Subscriptions() {
-    return <h1>Subscriptions</h1>;
+    return <h1>Index</h1>;
 }
 
 export default Subscriptions;

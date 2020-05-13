@@ -1,6 +1,6 @@
 import React from "react";
-import UserInfo from "../user-info/UserInfo";
-import "./SideMenu.css";
+import UserInfo from "../UserInfo/index";
+import "./style.css";
 import { Link } from "react-router-dom";
 
 
@@ -16,13 +16,13 @@ class SideMenu extends React.Component {
                         <Link to="/repositories">Repositories</Link>
                     </li>
                     <li className="navTab">
-                        <Link to="/subscriptions">Subscriptions</Link>
+                        <Link to="/subscriptions">Index</Link>
                     </li>
                     <li className="navTab">
                         <Link to="/followers">Followers</Link>
                     </li>
                     <li className="navTab">
-                        <Link to="/about">About</Link>
+                        <Link to="/about">Index</Link>
                     </li>
                 </ul>
             </div>

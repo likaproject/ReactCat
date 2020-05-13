@@ -1,7 +1,7 @@
 import React from "react";
-import "./Main.css";
-import MainContent from "../main-content/MainContent";
-import Header from "../header/Header";
+import "./style.css";
+import MainContent from "../MainContent/index";
+import Header from "../Header/index";
 
 class Main extends React.Component {
     render() {

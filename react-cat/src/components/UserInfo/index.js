@@ -1,5 +1,5 @@
 import React from "react";
-import "./UserInfo.css";
+import "./style.css";
 import { scryRenderedComponentsWithType } from "react-dom/test-utils";
 
 class UserInfo extends React.Component {
