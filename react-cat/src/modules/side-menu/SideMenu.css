@@ -1,0 +1,16 @@
+.sideMenu {
+    width: 20vw;
+    min-width: 200px;
+    flex-direction: column;
+    background-color: #4c56c0;
+}
+
+.navTabs {
+    list-style: none;
+}
+
+.navTab {
+    padding: 10px 0;
+    margin: 10px 0;
+    background-color: #ffffff;
+}
